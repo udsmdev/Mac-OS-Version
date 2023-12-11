@@ -102,7 +102,7 @@ update: (output,domEl) ->
 
   icon = ''; osRelease = ''
   macOSVersion = parseInt( osVersion, 10 )
-  if (macOSVersion >= 13.0 && macOSVersion < 14)
+  if (macOSVersion >= 14.0 && macOSVersion < 15)
       if Interface == 'Dark' then icon = iconDir + "sonoma.png" else icon = iconDir + "sonoma.png"
       osRelease = 'Sonoma'
   else if (macOSVersion >= 13.0 && macOSVersion < 14)
