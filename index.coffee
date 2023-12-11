@@ -103,32 +103,35 @@ update: (output,domEl) ->
   icon = ''; osRelease = ''
   macOSVersion = parseInt( osVersion, 10 )
   if (macOSVersion >= 13.0 && macOSVersion < 14)
+      if Interface == 'Dark' then icon = iconDir + "sonoma.png" else icon = iconDir + "sonoma.png"
+      osRelease = 'Sonoma'
+  else if (macOSVersion >= 13.0 && macOSVersion < 14)
       if Interface == 'Dark' then icon = iconDir + "ventura.png" else icon = iconDir + "ventura.png"
-      osRelease = ' Ventura'
+      osRelease = 'Ventura'
   else if (macOSVersion >= 12.0 && macOSVersion < 13)
       if Interface == 'Dark' then icon = iconDir + "monterey-dark.png" else icon = iconDir + "monterey.png"
-      osRelease = ' Monterey'
+      osRelease = 'Monterey'
   else if (macOSVersion >= 11.0 && macOSVersion < 12.0)
       if Interface == 'Dark' then icon = iconDir + "big_sur.png" else icon = iconDir + "big_sur.png"
-      osRelease = ' Big Sur'
+      osRelease = 'Big Sur'
   else if (macOSVersion >= 10.15 && macOSVersion < 10.16)
       if Interface == 'Dark' then icon = iconDir + "catalina_dark.png" else icon = iconDir + "catalina.png"
-      osRelease = ' Catalina'
+      osRelease = 'Catalina'
   else if (macOSVersion >= 10.14 && macOSVersion < 10.15)
       if Interface == 'Dark' then icon = iconDir + "mojave_dark.png" else icon = iconDir + "mojave.png"
-      osRelease = ' Mojave'
+      osRelease = 'Mojave'
   else if (macOSVersion >= 10.13  && macOSVersion < 10.14)
       icon = iconDir + "high_sierra.png"
-      osRelease = ' High Sierra'
+      osRelease = 'High Sierra'
   else if (macOSVersion >= 10.12 && macOSVersion < 10.13)
       icon = iconDir + "sierra.png"
-      osRelease = ' Sierra'
+      osRelease = 'Sierra'
   else if (macOSVersion >= 10.11 && macOSVersion < 10.12)
       icon = iconDir + "el_capitan.png"
-      osRelease = ' El Capitan'
+      osRelease = 'El Capitan'
   else if (macOSVersion >= 10.10 && macOSVersion < 10.11)
       icon = iconDir + "yosemite.png"
-      osRelease = ' Yosemite'
+      osRelease = 'Yosemite'
   else
       icon = iconDir + "mac_os.png"
 
@@ -141,7 +144,7 @@ update: (output,domEl) ->
 
   if osName != ''
     dom.find('.osName').html(osName)
-    dom.find('.osRelease').html(osRelease)
+    dom.find('.osRelease').html(' ' + osRelease)
     if showBuild == true
       dom.find('.osVersion').html('Version ' + osVersion + ' ' + osBuild)
     else
