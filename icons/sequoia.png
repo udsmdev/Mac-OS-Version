@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+    <html lang="en-US" data-path="/icons/macos-sequoia-2024-10-08/">
+      <head>
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Showcasing beautiful icon designs from the macOS App Store" />
+
+        <!-- Title -->
+        <title>macOS Sequoia | macOS Icon Gallery</title>
+
+        <!-- Gonna be accessing a CDN -->
+        <link rel="preconnect" href="https://cdn.jim-nielsen.com" />
+
+        <!-- Favicons etc. -->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets/styles/reset.css" />
+        <link rel="stylesheet" href="/assets/styles/index.css" />
+
+        <!-- XML & JSON Feeds -->
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="macOS Icon Gallery"
+          href="/feed.xml"
+        />
+        <link
+          rel="alternate"
+          title="JSON Feed"
+          type="application/json"
+          href="/feed.json"
+        />
+
+        <!-- Scripts -->
+        <script src="/assets/scripts/index.js" defer></script>
+
+        <!-- Other page-specific head elements,
+        i.e. open graph images, <style> blocks, etc -->
+        
+      <meta property="og:url" content="https://macosicongallery.com/icons/macos-sequoia-2024-10-08/" />
+      <meta property="og:title" content="macOS Sequoia" />
+      <meta
+        property="og:description"
+        content="App development by Apple. Categorized under “Utilities”."
+      />
+      <meta property="og:type" content="article" />
+      <meta property="og:image" content="https://cdn.jim-nielsen.com/macos/512/macos-sequoia-2024-10-08.png?rf=1024" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@icongalleries" />
+      <meta name="twitter:title" content="macOS Sequoia" />
+      <meta
+        name="twitter:description"
+        content="App development by Apple. Categorized under “Utilities”."
+      />
+      <meta name="twitter:image" content="https://cdn.jim-nielsen.com/macos/512/macos-sequoia-2024-10-08.png?rf=1024" />
+      <link
+        rel="preload"
+        as="image"
+        href="https://cdn.jim-nielsen.com/macos/512/macos-sequoia-2024-10-08.png?rf=1024"
+        imagesrcset="https://cdn.jim-nielsen.com/macos/1024/macos-sequoia-2024-10-08.png?rf=1024 2x"
+      />
+    
+      </head>
+      <body class="macosicongallery">
+        <script>
+          document.body.classList.add("js");
+
+/**
+ * We'll use this elsewhere, just FYI
+ * @param {'light' | 'dark' | 'system'} theme
+ */
+window.APPLY_THEME_TO_DOCUMENT = (theme) => {
+  // Convert user preference of 'system' to 'dark' or 'light'
+  let documentTheme =
+    theme === "system"
+      ? window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light"
+      : theme;
+
+  // Apply to the document
+  if (documentTheme === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+  }
+};
+
+// Set the initial theme
+let theme = window.localStorage.getItem("theme");
+if (theme === null) {
+  window.localStorage.setItem("theme", "light");
+  theme = "light";
+}
+window.APPLY_THEME_TO_DOCUMENT(theme);
+
+// Respond to user changing system preference
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (e) => {
+    const theme = window.localStorage.getItem("theme");
+    if (theme === "system") {
+      if (e.matches) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        document.documentElement.removeAttribute("data-theme");
+      }
+    }
+  });
+;
+        </script>
+
+        <header class="header">
+          <a
+            href="/"
+            id="js-back-button"
+            class="svg-button svg-button--back"
+            aria-label="Back"
+            title="Back"
+            
+            onclick="document.referrer ? history.back() : window.location.href = '/'; return false;"
+          >
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z"
+    fill="currentColor"
+  />
+</svg>
+
+          </a>
+
+          <a
+            href="/"
+            aria-current="false"
+            class="header-title"
+          >
+            <h1>macOS Icon Gallery</h1>
+            <p>macOS Sequoia</p>
+          </a>
+
+          <a
+            href="/search/"
+            class="svg-button"
+            
+            aria-label="Search"
+            style="margin-right: 8px;"
+            ><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5ZM9.30884 10.0159C8.53901 10.6318 7.56251 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56251 10.6318 8.53901 10.0159 9.30884L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L9.30884 10.0159Z"
+    fill="currentColor"
+  />
+</svg>
+</a
+          >
+
+          <a
+            href="/menu/"
+            class="svg-button"
+            
+            aria-label="Menu"
+            ><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
+    fill="currentColor"
+  />
+</svg>
+</a
+          >
+        </header>
+
+        
+
+        <main id="js-search-root">
+    <div class="post">
+      <div class="post-icon" style="view-transition-name: icon-macos-sequoia-2024-10-08">
+        
+    <span class="icon-wrapper" data-date="2024-10-08">
+      <img
+        alt="macOS Sequoia app icon"
+        class="icon"
+        width="512"
+        height="512"
+        src="https://cdn.jim-nielsen.com/macos/512/macos-sequoia-2024-10-08.png?rf=1024"
+        srcset="https://cdn.jim-nielsen.com/macos/1024/macos-sequoia-2024-10-08.png?rf=1024 2x"
+        
+      />
+    </span>
+  
+      </div>
+
+      <dl class="post-meta">
+         <a href="/developers/apple">
+              <dt>Developer</dt>
+              <dd>
+                Apple
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M6.18194 4.18185C6.35767 4.00611 6.6426 4.00611 6.81833 4.18185L9.81833 7.18185C9.90272 7.26624 9.95013 7.3807 9.95013 7.50005C9.95013 7.6194 9.90272 7.73386 9.81833 7.81825L6.81833 10.8182C6.6426 10.994 6.35767 10.994 6.18194 10.8182C6.0062 10.6425 6.0062 10.3576 6.18194 10.1819L8.86374 7.50005L6.18194 4.81825C6.0062 4.64251 6.0062 4.35759 6.18194 4.18185Z"
+    fill="currentColor"
+  />
+</svg>
+
+              </dd>
+            </a> <a href="/categories/6002">
+              <dt>Category</dt>
+              <dd>
+                Utilities
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M6.18194 4.18185C6.35767 4.00611 6.6426 4.00611 6.81833 4.18185L9.81833 7.18185C9.90272 7.26624 9.95013 7.3807 9.95013 7.50005C9.95013 7.6194 9.90272 7.73386 9.81833 7.81825L6.81833 10.8182C6.6426 10.994 6.35767 10.994 6.18194 10.8182C6.0062 10.6425 6.0062 10.3576 6.18194 10.1819L8.86374 7.50005L6.18194 4.81825C6.0062 4.64251 6.0062 4.35759 6.18194 4.18185Z"
+    fill="currentColor"
+  />
+</svg>
+
+              </dd>
+            </a> <a href="/years/2024">
+              <dt>Year</dt>
+              <dd>
+                2024
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M6.18194 4.18185C6.35767 4.00611 6.6426 4.00611 6.81833 4.18185L9.81833 7.18185C9.90272 7.26624 9.95013 7.3807 9.95013 7.50005C9.95013 7.6194 9.90272 7.73386 9.81833 7.81825L6.81833 10.8182C6.6426 10.994 6.35767 10.994 6.18194 10.8182C6.0062 10.6425 6.0062 10.3576 6.18194 10.1819L8.86374 7.50005L6.18194 4.81825C6.0062 4.64251 6.0062 4.35759 6.18194 4.18185Z"
+    fill="currentColor"
+  />
+</svg>
+
+              </dd>
+            </a> <a href="https://www.apple.com/macos/sequoia">
+              <dt>Developer website</dt>
+              <dd>
+                
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z"
+    fill="currentColor"
+  />
+</svg>
+
+              </dd>
+            </a> <a href="https://apps.apple.com/app/id6596773750">
+              <dt>App store</dt>
+              <dd>
+                
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z"
+    fill="currentColor"
+  />
+</svg>
+
+              </dd>
+            </a>
+      </dl>
+
+      <!-- @TODO icons from the same year? -->
+    </div>
+  </main>
+
+        
+  <aside class="ad-container">
+    <script
+      async
+      type="text/javascript"
+      src="//cdn.carbonads.com/carbon.js?serve=CESI627Y&placement=wwwmacosicongallerycom"
+      id="_carbonads_js"
+    ></script>
+  </aside>
+
+      </body>
+    </html>
